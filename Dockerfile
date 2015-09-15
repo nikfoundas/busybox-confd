@@ -14,4 +14,4 @@ RUN chmod +x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
 
-CMD ["confd", "-version"]
+CMD ["/usr/bin/confd", "-version"]
