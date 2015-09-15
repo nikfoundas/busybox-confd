@@ -10,6 +10,8 @@ RUN chmod +x /usr/bin/confd
 
 COPY entrypoint.sh /entrypoint.sh
 
+RUN chmod +x /entrypoint.sh
+
 ENTRYPOINT ["/entrypoint.sh"]
 
 CMD ["confd", "-version"]
